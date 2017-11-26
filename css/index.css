@@ -1,0 +1,11 @@
+#cnv-logo {
+	border: 1px solid blue;
+	width: 100%;
+	height: auto;
+}
+
+.container {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
