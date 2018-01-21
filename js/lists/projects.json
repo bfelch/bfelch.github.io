@@ -1,7 +1,8 @@
 [
 	{
 		"name": "Full Steam Space Pixel",
-		"img_s": "fullsteam2.png"
+		"img_s": "fullsteam2.png",
+		"pitch": "Fight your way through peace loving space police and take their technology to improve your own space ship. Gather enough steam and you become an unstoppable monster for a short duration."
 	},
 	{
 		"name": "Aqueous",

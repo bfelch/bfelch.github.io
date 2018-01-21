@@ -12,6 +12,7 @@ define ([
 		templateString: template,
 		name: 'No Name',
 		thumbnail: '',
+		pitch: '',
 		
 		constructor: function(project) {
 			this.name = project.name;
@@ -34,6 +35,12 @@ define ([
 				
 				this._set('thumbnail', imagePath);
 				this.thumbnailNode.src = imagePath;
+			}
+		},
+		
+		_setPitchAttr: function(pitch) {
+			if (pitch != '') {
+				this._set('pitch', pitch);
 			}
 		}
 	});
