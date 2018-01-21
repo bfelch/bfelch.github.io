@@ -5,25 +5,49 @@
 <link rel='stylesheet' href='css/bootstrap.min.css' />
 <link rel='stylesheet' href='css/index.css' />
 
-<script src='js/jquery-3.2.1.min.js'></script>
+<script async src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script async src='https://ajax.googleapis.com/ajax/libs/dojo/1.13.0/dojo/dojo.js'></script>
 <script async src='js/index.js'></script>
+
+<script>
+	dojoConfig = {
+			async: true,
+			parseOnLoad: true
+	};
+</script>
 </head>
 
 <body>
 
-<div class='container'>
-	<div class='row justify-content-center align-items-center'>
-		<div class='col-sm-11'>
-			<canvas id='cnv-logo' width='800' height='600'></canvas>
-		</div>
-		<div class='col-sm'>
-			<div class='row justify-content-center align-items-center'>
-				<div class='col col-lg-12'>link1</div>
-				<div class='col col-lg-12'>link2</div>
-				<div class='col col-lg-12'>link3</div>
-			</div>
-		</div>
-	</div>
+<div class='banner banner-1'></div>
+
+<div class='banner banner-2'>
+	<div class='banner-title center'>PORTFOLIO</div>
+</div>
+
+<div id='portfolio'></div>
+
+<script>
+	require([
+		'dojo/request',
+		'dojo/dom',
+		'dojo/_base/array',
+		'./js/widgets/ProjectThumbnail.js',
+	], function(request, dom, arrayUtil, ProjectThumbnail) {
+		request('js/lists/projects.json', {
+			handleAs: 'json'
+		}).then(function(projects) {
+			var portfolioContainer = dom.byId('portfolio');
+			arrayUtil.forEach(projects, function(project) {
+				var widget = new ProjectThumbnail(project).placeAt(portfolioContainer);
+				console.log('adding project: ' + project.name);
+			});
+		});
+	})
+</script>
+
+<div class='banner banner-3'>
+	<div class='banner-title center'>COMICS</div>
 </div>
 </body>
 </html>
