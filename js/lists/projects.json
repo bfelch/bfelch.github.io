@@ -6,30 +6,37 @@
 	},
 	{
 		"name": "Aqueous",
-		"img_s": "aqueous.png"
+		"img_s": "aqueous.png",
+		"pitch": "Use your fingers to control your blobbly. Avoiding the obstacles will earn you coins to buy your favorite colors for your blob."
 	},
 	{
 		"name": "They're on a Boat",
-		"img_s": "theyreonaboat.png"
+		"img_s": "theyreonaboat.png",
+		"pitch": "Get the boat full of monkeys to the Nanner Isles. Avoid the imposter islands and sea monsters to bring as many monkeys as possible to the never ending supply of nanners"
 	},
 	{
 		"name": "Full Steam Space Machine",
-		"img_s": "fullsteam.png"
+		"img_s": "fullsteam.png",
+		"pitch": "Terrorize the galaxy in your Spacemachine by shooting down any opposition you face. Some of their ships will drop upgrades that increase the number of shots you have, your fire rate, and the size of your shot. Be on the look out for the steam cannisters that will allow you to enter Full Steam mode. Entering Full Steam will destroy any enemy ships near you while also pushing you over the speed of light. How long can you survive? Can you get the high score? Can you eliminate an entire population of peace loving space police? ...Yes? You monster."
 	},
 	{
 		"name": "Fighter in Simple Times",
-		"img_s": "fist.png"
+		"img_s": "fist.png",
+		"pitch": "Fight your enemies by manipulating the tilt of the world and charging at your enemies head first."
 	},
 	{
 		"name": "Legion of You",
-		"img_s": "legion.png"
+		"img_s": "legion.png",
+		"pitch": "Lead your Legion to victory by controlling the map, and therefore, your enemy. Mixing elements from Age of Empires, Starcraft, Guild Wars 2 World vs World, and League of Legends; Legion of You offers a unique play style for RTS players."
 	},
 	{
 		"name": "Home Sweet Gnome",
-		"img_s": "gnome.png"
+		"img_s": "gnome.png",
+		"pitch": "Explore the ruined estate of a disturbed alchemist who is responsible for bringing his lawn ornaments to life. Can you escape the estate before entering a permanent sleep?"
 	},
 	{
 		"name": "Foliage Feud",
-		"img_s": "foliage.png"
+		"img_s": "foliage.png",
+		"pitch": "Your fiancè has been kidnapped by the nefarious Dr. Parsnip. To rescue your beloved, you must help your brother identify the plants of the nearby parks. Do you have what it takes to rescue your fiancè and defeat Dr. Parsnip?"
 	}
 ]

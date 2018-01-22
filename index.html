@@ -32,15 +32,23 @@
 
 <script>
 	dojoConfig = {
+			cacheBust: true, // TODO remove this for deploy
 			async: true,
 			parseOnLoad: true
 	};
 	
 	window.onload = function() {
 		require([
-			'./js/widgets/ProjectThumbnailManager.js'
-		], function(ProjectThumbnailManager) {
-			ProjectThumbnailManager.display('portfolio', 3);
+			'./js/widgets/ListManager.js',
+			'./js/widgets/ProjectThumbnail.js'
+		], function(ListManager, ProjectThumbnail) {
+			var parameters = {
+					list: 'projects',
+					containerId: 'portfolio',
+					limit: 3,
+					widget: ProjectThumbnail
+			};
+			ListManager.displayList(parameters);
 		});
 	}
 </script>
