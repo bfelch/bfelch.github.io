@@ -2,9 +2,6 @@
 <head>
 <title>Wugbor</title>
 
-<link rel='stylesheet' href='css/bootstrap.min.css' />
-<link rel='stylesheet' href='css/index.css' />
-
 <link rel="shortcut icon" href="/img/icons/favicon.ico">
 <link rel="icon" sizes="16x16 32x32 64x64" href="/img/icons/favicon.ico">
 <link rel="icon" type="image/png" sizes="196x196" href="/img/icons/favicon-192.png">
@@ -26,30 +23,16 @@
 <meta name="msapplication-TileImage" content="/img/icons/favicon-144.png">
 <meta name="msapplication-config" content="/img/icons/browserconfig.xml">
 
-<script async src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<link rel='stylesheet' href='css/bootstrap.min.css' />
+<link rel='stylesheet' href='css/index.css' />
+<link rel='stylesheet' href='css/project_thumbnail.css' />
+
 <script async src='https://ajax.googleapis.com/ajax/libs/dojo/1.13.0/dojo/dojo.js'></script>
 <script async src='js/index.js'></script>
 
 <script>
-	dojoConfig = {
-			cacheBust: true, // TODO remove this for deploy
-			async: true,
-			parseOnLoad: true
-	};
-	
 	window.onload = function() {
-		require([
-			'./js/widgets/ListManager.js',
-			'./js/widgets/ProjectThumbnail.js'
-		], function(ListManager, ProjectThumbnail) {
-			var parameters = {
-					list: 'projects',
-					containerId: 'portfolio',
-					limit: 3,
-					widget: ProjectThumbnail
-			};
-			ListManager.displayList(parameters);
-		});
+		displayProjects(3);
 	}
 </script>
 </head>

@@ -13,10 +13,13 @@ define ([
 		name: 'No Name',
 		thumbnail: '',
 		pitch: '',
+		index: 0,
 		
-		constructor: function(project) {
+		constructor: function(project, index) {
 			this.name = project.name;
 			this.thumbnail = project.img_s;
+			this.pitch = project.pitch;
+			this.index = index;
 		},
 		
 		postCreate: function() {
@@ -42,6 +45,10 @@ define ([
 			if (pitch != '') {
 				this._set('pitch', pitch);
 			}
+		},
+		
+		_setIndexAttr: function(index) {
+			this._set('index', index);
 		}
 	});
 });
