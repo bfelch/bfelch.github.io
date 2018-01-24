@@ -3,7 +3,25 @@ dojoConfig = {
 		parseOnLoad: true
 };
 
-var lists = [];
+function includeHeader() {
+	require([
+		'dojo/query',
+		'dojo/dom-construct',
+		'dojo/_base/array',
+		'./js/widgets/IncludesManager.js'
+	], function(query, domConstruct, arrayUtil, IncludesManager) {
+		var head = query('head')[0];
+		var includes = new IncludesManager();
+		console.log(head);
+		console.log(includes);
+		console.log(includes.domNode);
+		head.innerHTML = includes.domNode.innerHTML + head.innerHTML;
+//		arrayUtil.forEach(includes.domNode.children, function(node) {
+//			console.log(node);
+//			domConstruct.place(node, head);
+//		});
+	})
+}
 	
 function displayProjects(count) {
 	require([
