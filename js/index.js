@@ -3,6 +3,14 @@ dojoConfig = {
 		parseOnLoad: true
 };
 
+var showcaseWidgets = {
+		game: 'GameThumbnail'
+};
+
+var lists = {
+		game: 'games'
+}
+
 function includeHeader() {
 	require([
 		'dojo/query',
@@ -10,7 +18,6 @@ function includeHeader() {
 		'dojo/text!./js/widgets/templates/Includes.html'
 	], function(query, domConstruct, includes) {
 		var head = query('head')[0];
-		console.log(head);
 		domConstruct.place(includes, head, 'first');
 	});
 }
@@ -30,26 +37,28 @@ function displayGames(count) {
 	});
 }
 
-function displayGame(index) {
+function displayShowcase() {
 	require([
-		'dojo/request',
-		'dojo/dom',
-		'./js/widgets/GameThumbnail.js'
-	], function(request, dom, GameThumbnail) {
+		'dojo/io-query'
+	], function(ioQuery) {
 		var uri = window.location.href;
 		var query = uri.substring(uri.indexOf('?') + 1, uri.length);
 		query = ioQuery.queryToObject(query);
 		
-		if (query.idx == null) {
-			query.idx = 0;
-		}
-		s
-		request('js/lists/games.json', {
-			handleAs: 'json'
-		}).then(function(list) {
-			var container = dom.byId('test');
-			var widget = new GameThumbnail(list[query.idx], query.idx);
-			widget.placeAt(container);
+		var widgetString = './js/widgets/' + showcaseWidgets[query.type] + '.js';
+		
+		require([
+			'dojo/request',
+			'dojo/dom',
+			widgetString
+		], function(request, dom, Widget) {
+			request('js/lists/' + lists[query.type] + '.json', {
+				handleAs: 'json'
+			}).then(function(list) {
+				var container = dom.byId('test');
+				var widget = new Widget(list[query.idx], query.idx);
+				widget.placeAt(container);
+			});
 		});
 	});
 }
