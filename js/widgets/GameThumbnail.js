@@ -2,23 +2,23 @@ define ([
 	'dojo/_base/declare',
 	'dijit/_WidgetBase',
 	'dijit/_TemplatedMixin',
-	'dojo/text!/js/widgets/templates/ProjectThumbnail.html'
+	'dojo/text!/js/widgets/templates/GameThumbnail.html'
 ], function(
 		declare,
 		_WidgetBase,
 		_TemplatedMixin,
 		template) {
-	return declare('ProjectThumbnail', [_WidgetBase, _TemplatedMixin], {
+	return declare('GameThumbnail', [_WidgetBase, _TemplatedMixin], {
 		templateString: template,
 		name: 'No Name',
 		thumbnail: '',
 		pitch: '',
 		index: 0,
 		
-		constructor: function(project, index) {
-			this.name = project.name;
-			this.thumbnail = project.img_s;
-			this.pitch = project.pitch;
+		constructor: function(game, index) {
+			this.name = game.name;
+			this.thumbnail = game.img_s;
+			this.pitch = game.pitch;
 			this.index = index;
 		},
 		
@@ -34,7 +34,7 @@ define ([
 		
 		_setThumbnailAttr: function(imagePath) {
 			if (imagePath != '') {
-				imagePath = './img/portfolio/' + imagePath;
+				imagePath = './img/games/' + imagePath;
 				
 				this._set('thumbnail', imagePath);
 				this.thumbnailNode.src = imagePath;
