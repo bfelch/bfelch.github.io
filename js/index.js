@@ -3,13 +3,17 @@ dojoConfig = {
 		parseOnLoad: true
 };
 
+var galleryWidgets = {
+		game: 'GameThumbnail'
+};
+
 var showcaseWidgets = {
 		game: 'GameThumbnail'
 };
 
 var lists = {
 		game: 'games'
-}
+};
 
 function includeHeader() {
 	require([
@@ -21,17 +25,34 @@ function includeHeader() {
 		domConstruct.place(includes, head, 'first');
 	});
 }
+
+function displayGallery() {
+	require([
+		'dojo/io-query',
+		'dojo/dom'
+		], function(ioQuery, dom) {
+		var query = getQueryObject(ioQuery);
+		
+		var title = dom.byId('galleryTitle');
+		title.innerHTML = lists[query.type].toUpperCase();
+		
+		displayGalleryItems(query.type, 0, 'galleryContainer');
+	});
+}
 	
-function displayGames(count) {
+function displayGalleryItems(type, count, container) {
+	var widgetPath = getGalleryWidgetPath(type);
+	var listName = lists[type];
+
 	require([
 		'./js/widgets/ListManager.js',
-		'./js/widgets/GameThumbnail.js'
-	], function(ListManager, GameThumbnail) {
+		widgetPath
+	], function(ListManager, Widget) {
 		var parameters = {
-				list: 'games',
-				containerId: 'gameContainer',
+				list: listName,
+				containerId: container,
 				limit: count,
-				widget: GameThumbnail
+				widget: Widget
 		};
 		ListManager.displayList(parameters);
 	});
@@ -41,24 +62,49 @@ function displayShowcase() {
 	require([
 		'dojo/io-query'
 	], function(ioQuery) {
-		var uri = window.location.href;
-		var query = uri.substring(uri.indexOf('?') + 1, uri.length);
-		query = ioQuery.queryToObject(query);
+		var query = getQueryObject(ioQuery);
 		
-		var widgetString = './js/widgets/' + showcaseWidgets[query.type] + '.js';
+		var widgetPath = getShowcaseWidgetPath(query.type);
 		
 		require([
 			'dojo/request',
 			'dojo/dom',
-			widgetString
+			widgetPath
 		], function(request, dom, Widget) {
-			request('js/lists/' + lists[query.type] + '.json', {
+			request(getListPath(query.type), {
 				handleAs: 'json'
 			}).then(function(list) {
-				var container = dom.byId('test');
+				var title = dom.byId('showcaseTitle');
+				title.innerHTML = list[query.idx].name.toUpperCase();
+				
+				var container = dom.byId('showcaseContainer');
 				var widget = new Widget(list[query.idx], query.idx);
 				widget.placeAt(container);
 			});
 		});
 	});
+}
+
+function getQueryObject(ioQuery) {
+	var uri = window.location.href;
+	var query = uri.substring(uri.indexOf('?') + 1, uri.length);
+	query = ioQuery.queryToObject(query);
+	
+	return query;
+}
+
+function getGalleryWidgetPath(type) {
+	return getWidgetPath(galleryWidgets[type]);
+}
+
+function getShowcaseWidgetPath(type) {
+	return getWidgetPath(showcaseWidgets[type]);
+}
+
+function getWidgetPath(widget) {
+	return './js/widgets/' + widget + '.js'
+}
+
+function getListPath(type) {
+	return 'js/lists/' + lists[type] + '.json';
 }
