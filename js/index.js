@@ -29,12 +29,14 @@ function includeHeader() {
 function displayGallery() {
 	require([
 		'dojo/io-query',
-		'dojo/dom'
-		], function(ioQuery, dom) {
+		'dojo/dom',
+		'dojo/dom-class'
+		], function(ioQuery, dom, domClass) {
 		var query = getQueryObject(ioQuery);
 		
 		var title = dom.byId('galleryTitle');
 		title.innerHTML = lists[query.type].toUpperCase();
+		domClass.add(title.parentNode, 'banner-' + lists[query.type]);
 		
 		displayGalleryItems(query.type, 0, 'galleryContainer');
 	});
@@ -69,16 +71,24 @@ function displayShowcase() {
 		require([
 			'dojo/request',
 			'dojo/dom',
+			'dojo/dom-class',
 			widgetPath
-		], function(request, dom, Widget) {
+		], function(request, dom, domClass, Widget) {
 			request(getListPath(query.type), {
 				handleAs: 'json'
 			}).then(function(list) {
+				var element = list[query.idx];
+				
 				var title = dom.byId('showcaseTitle');
-				title.innerHTML = list[query.idx].name.toUpperCase();
+				title.innerHTML = element.name.toUpperCase();
+				if (element.bannerUrl != null) {
+					// TODO add game specific banner if applicable
+				} else {
+					domClass.add(title.parentNode, 'banner-' + lists[query.type]);
+				}
 				
 				var container = dom.byId('showcaseContainer');
-				var widget = new Widget(list[query.idx], query.idx);
+				var widget = new Widget(element, query.idx);
 				widget.placeAt(container);
 			});
 		});

@@ -2,6 +2,10 @@ body {
 	font-family: 'Segoe UI', Arial, sans-serif;
 }
 
+.container {
+	padding-bottom: 2em;
+}
+
 .banner {
 	position: relative;
 	min-height: 400px;
@@ -14,16 +18,16 @@ body {
 	background-size: cover;
 }
 
-.banner-1 {
+.banner-head {
 	background-image: url('../img/banners/mountains.jpeg');
 	min-height: 100vh;
 }
 
-.banner-2 {
+.banner-games {
 	background-image: url('../img/banners/code.jpeg');
 }
 
-.banner-3 {
+.banner-comics {
 	background-image: url('../img/banners/plane.jpeg');
 }
 
@@ -32,6 +36,7 @@ body {
 	font-size: 36px;
 	letter-spacing: 1em;
 	padding-left: 1em;
+	text-align: center;
 }
 
 .center {
