@@ -15,6 +15,11 @@ var lists = {
 		game: 'games'
 };
 
+function includeCommon() {
+	includeHeader();
+	includeNavbar();
+}
+
 function includeHeader() {
 	require([
 		'dojo/query',
@@ -23,6 +28,17 @@ function includeHeader() {
 	], function(query, domConstruct, includes) {
 		var head = query('head')[0];
 		domConstruct.place(includes, head, 'first');
+	});
+}
+
+function includeNavbar() {
+	require([
+		'dojo/query',
+		'dojo/dom-construct',
+		'dojo/text!./js/widgets/templates/Navbar.html'
+	], function(query, domConstruct, navbar) {
+		var body = query('body')[0];
+		domConstruct.place(navbar, body, 'first');
 	});
 }
 
