@@ -62,6 +62,12 @@ body {
 	background-color: #00000044;
 }
 
+.about-text {
+	max-width: 80%;
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
 .center {
 	position: absolute;
 	top: 50%;
