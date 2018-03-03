@@ -8,10 +8,10 @@ define ([
 			request('js/lists/' + parameters.list + '.json', {
 				handleAs: 'json'
 			}).then(function(list) {
-				var container = dom.byId(parameters.containerId);
+				const container = dom.byId(parameters.containerId);
 				arrayUtil.forEach(list, function(element, i) {
 					if (parameters.limit > 0 && i >= parameters.limit) { return; }
-					var widget = new parameters.widget(element, i);
+					const widget = new parameters.widget(element, i);
 					widget.placeAt(container);
 				});
 			});

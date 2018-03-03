@@ -1,5 +1,4 @@
 <nav class='navbar navbar-expand-md navbar-light bg-faded'>
-<!-- change navbar-expand-md to navbar-toggleable-md after updating bootstrap -->
 	<button class='navbar-toggler navbar-toggler-right'
 		type='button' data-toggle='collapse'
 		data-target='#navbarLinkContent'
@@ -14,8 +13,18 @@
 	<div id='navbarLinkContent'
 		class='collapse navbar-collapse'>
 		<ul class='navbar-nav mr-auto'>
-			<li class='nav-item'>
-				<a class='nav-link'>Projects</a>
+			<li class='nav-item dropdown'>
+				<a id='navbarDropdownProjects'
+					class='nav-link dropdown-toggle'
+					role='button'
+					data-toggle='dropdown'
+					aria-haspopup='true'
+					aria-expanded='false'>Projects</a>
+
+				<div id='dropdownProjectsContainer'
+					class='dropdown-menu'
+					aria-labelledby='navbarDropdownProjects'>
+				</div>
 			</li>
 		</ul>
 	</div>

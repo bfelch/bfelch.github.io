@@ -27,13 +27,13 @@ define ([
 		},
 		
 		_setNameAttr: function(name) {
-			if (name != '') {
+			if (name !== '') {
 				this._set('name', name);
 			}
 		},
 		
 		_setThumbnailAttr: function(imagePath) {
-			if (imagePath != '') {
+			if (imagePath !== '') {
 				imagePath = './img/games/' + imagePath;
 				
 				this._set('thumbnail', imagePath);
@@ -42,7 +42,7 @@ define ([
 		},
 		
 		_setPitchAttr: function(pitch) {
-			if (pitch != '') {
+			if (pitch !== '') {
 				this._set('pitch', pitch);
 			}
 		},

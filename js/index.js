@@ -1,18 +1,24 @@
-dojoConfig = {
+'use strict';
+
+String.prototype.capitalizeFirst = function() {
+	return this.charAt(0).toUpperCase() + this.slice(1);
+}
+
+const dojoConfig = {
 		async: true,
 		parseOnLoad: true
 };
 
-var galleryWidgets = {
-		game: 'GameThumbnail'
+const galleryWidgets = {
+		games: 'GameThumbnail'
 };
 
-var showcaseWidgets = {
-		game: 'GameThumbnail'
+const showcaseWidgets = {
+		games: 'GameThumbnail'
 };
 
-var lists = {
-		game: 'games'
+const lists = {
+		games: 'games'
 };
 
 function includeCommon() {
@@ -26,7 +32,7 @@ function includeHeader() {
 		'dojo/dom-construct',
 		'dojo/text!./js/widgets/templates/Includes.html'
 	], function(query, domConstruct, includes) {
-		var head = query('head')[0];
+		const head = query('head')[0];
 		domConstruct.place(includes, head, 'first');
 	});
 }
@@ -37,8 +43,15 @@ function includeNavbar() {
 		'dojo/dom-construct',
 		'dojo/text!./js/widgets/templates/Navbar.html'
 	], function(query, domConstruct, navbar) {
-		var body = query('body')[0];
+		const body = query('body')[0];
 		domConstruct.place(navbar, body, 'first');
+
+		const types = Object.keys(lists).map(key => lists[key]);
+		types.forEach(type => domConstruct.create('a', {
+			className: 'dropdown-item',
+			href: './gallery.html?type=' + type,
+			innerHTML: type.capitalizeFirst()
+		}, 'dropdownProjectsContainer'));
 	});
 }
 
@@ -48,9 +61,9 @@ function displayGallery() {
 		'dojo/dom',
 		'dojo/dom-class'
 		], function(ioQuery, dom, domClass) {
-		var query = getQueryObject(ioQuery);
+		const query = getQueryObject(ioQuery);
 		
-		var title = dom.byId('galleryTitle');
+		const title = dom.byId('galleryTitle');
 		title.innerHTML = lists[query.type].toUpperCase();
 		domClass.add(title.parentNode, 'banner-' + lists[query.type]);
 		
@@ -59,14 +72,14 @@ function displayGallery() {
 }
 	
 function displayGalleryItems(type, count, container) {
-	var widgetPath = getGalleryWidgetPath(type);
-	var listName = lists[type];
+	const widgetPath = getGalleryWidgetPath(type);
+	const listName = lists[type];
 
 	require([
 		'./js/widgets/ListManager.js',
 		widgetPath
 	], function(ListManager, Widget) {
-		var parameters = {
+		const parameters = {
 				list: listName,
 				containerId: container,
 				limit: count,
@@ -80,9 +93,9 @@ function displayShowcase() {
 	require([
 		'dojo/io-query'
 	], function(ioQuery) {
-		var query = getQueryObject(ioQuery);
+		const query = getQueryObject(ioQuery);
 		
-		var widgetPath = getShowcaseWidgetPath(query.type);
+		const widgetPath = getShowcaseWidgetPath(query.type);
 		
 		require([
 			'dojo/request',
@@ -93,9 +106,9 @@ function displayShowcase() {
 			request(getListPath(query.type), {
 				handleAs: 'json'
 			}).then(function(list) {
-				var element = list[query.idx];
+				const element = list[query.idx];
 				
-				var title = dom.byId('showcaseTitle');
+				const title = dom.byId('showcaseTitle');
 				title.innerHTML = element.name.toUpperCase();
 				if (element.bannerUrl != null) {
 					// TODO add game specific banner if applicable
@@ -103,8 +116,8 @@ function displayShowcase() {
 					domClass.add(title.parentNode, 'banner-' + lists[query.type]);
 				}
 				
-				var container = dom.byId('showcaseContainer');
-				var widget = new Widget(element, query.idx);
+				const container = dom.byId('showcaseContainer');
+				const widget = new Widget(element, query.idx);
 				widget.placeAt(container);
 			});
 		});
@@ -112,8 +125,8 @@ function displayShowcase() {
 }
 
 function getQueryObject(ioQuery) {
-	var uri = window.location.href;
-	var query = uri.substring(uri.indexOf('?') + 1, uri.length);
+	const uri = window.location.href;
+	let query = uri.substring(uri.indexOf('?') + 1, uri.length);
 	query = ioQuery.queryToObject(query);
 	
 	return query;

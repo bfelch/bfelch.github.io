@@ -5,11 +5,13 @@
 
 <script async src='https://ajax.googleapis.com/ajax/libs/dojo/1.13.0/dojo/dojo.js'></script>
 <script async src='js/index.js'></script>
+<script src='js/jquery-3.2.1.min.js'></script>
+<script src='js/bootstrap.bundle.min.js'></script>
 
 <script>
 	window.onload = function() {
 		includeCommon();
-		displayGalleryItems('game', 3, 'gameContainer');
+		displayGalleryItems('games', 3, 'gameContainer');
 	}
 </script>
 </head>
@@ -25,7 +27,7 @@
 	<div id='gameContainer' class='row'>
 	</div>
 	<div class='row justify-content-center'>
-		<a href='./gallery.html?type=game'
+		<a href='./gallery.html?type=games'
 		class='btn btn-outline-secondary' role='button'>show all</a>
 	</div>
 </div>
