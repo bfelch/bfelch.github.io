@@ -14,7 +14,7 @@ const galleryWidgets = {
 };
 
 const showcaseWidgets = {
-		games: 'GameThumbnail'
+		games: 'GameShowcase'
 };
 
 const lists = {
@@ -24,6 +24,16 @@ const lists = {
 function includeCommon() {
 	includeHeader();
 	includeNavbar();
+
+	// $('.navbar').hide();
+	
+	// $(window).scroll(function() {
+	// 	if ($(this).scrollTop() < 400) {
+	// 		$('.navbar').fadeOut();
+	// 	} else {
+	// 		$('.navbar').fadeIn();
+	// 	}
+	// });
 }
 
 function includeHeader() {
@@ -43,8 +53,13 @@ function includeNavbar() {
 		'dojo/dom-construct',
 		'dojo/text!./js/widgets/templates/Navbar.html'
 	], function(query, domConstruct, navbar) {
-		const body = query('body')[0];
-		domConstruct.place(navbar, body, 'first');
+		const bannerHead = query('.banner-head')[0];
+		if (bannerHead) {
+			domConstruct.place(navbar, bannerHead, 'after');
+		} else {
+			const body = query('body')[0];
+			domConstruct.place(navbar, body, 'first');
+		}
 
 		const types = Object.keys(lists).map(key => lists[key]);
 		types.forEach(type => domConstruct.create('a', {
@@ -117,7 +132,7 @@ function displayShowcase() {
 				}
 				
 				const container = dom.byId('showcaseContainer');
-				const widget = new Widget(element, query.idx);
+				const widget = new Widget(element);
 				widget.placeAt(container);
 			});
 		});

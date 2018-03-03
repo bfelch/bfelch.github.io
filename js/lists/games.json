@@ -2,41 +2,49 @@
 	{
 		"name": "Full Steam Space Pixel",
 		"img_s": "fullsteam2.png",
-		"pitch": "Fight your way through peace loving space police and take their technology to improve your own space ship. Gather enough steam and you become an unstoppable monster for a short duration."
+		"pitch": "Fight your way through peace loving space police and take their technology to improve your own space ship. Gather enough steam and you become an unstoppable monster for a short duration.",
+		"about": "Based on Full Steam Space Machine (developed for a 48 hour game jam), this is my retro reimaging of the game. I created this during what I call 'My Own Personal Plane Jam' which came about during my flights to and from GDC 2016."
 	},
 	{
 		"name": "Aqueous",
 		"img_s": "aqueous.png",
-		"pitch": "Use your fingers to control your blobby. Avoiding the obstacles will earn you coins to buy your favorite colors for your blob."
+		"pitch": "Use your fingers to control your blobby. Avoiding the obstacles will earn you coins to buy your favorite colors for your blob.",
+		"about": "This is my first publicly released game and is available on the Google Play store for android devices."
 	},
 	{
 		"name": "They're on a Boat",
 		"img_s": "theyreonaboat.png",
-		"pitch": "Get the boat full of monkeys to the Nanner Isles. Avoid the imposter islands and sea monsters to bring as many monkeys as possible to the never ending supply of nanners"
+		"pitch": "Get the boat full of monkeys to the Nanner Isles. Avoid the imposter islands and sea monsters to bring as many monkeys as possible to the never ending supply of nanners",
+		"about": "This game was made in about 8 hours for the 'Best Worst Game Ever' during the last week of the semester."
 	},
 	{
 		"name": "Full Steam Space Machine",
 		"img_s": "fullsteam.png",
-		"pitch": "Terrorize the galaxy in your Spacemachine by shooting down any opposition you face. Some of their ships will drop upgrades that increase the number of shots you have, your fire rate, and the size of your shot. Be on the look out for the steam cannisters that will allow you to enter Full Steam mode. Entering Full Steam will destroy any enemy ships near you while also pushing you over the speed of light. How long can you survive? Can you get the high score? Can you eliminate an entire population of peace loving space police? ...Yes? You monster."
+		"pitch": "Terrorize the galaxy in your Spacemachine by shooting down any opposition you face. Some of their ships will drop upgrades that increase the number of shots you have, your fire rate, and the size of your shot. Be on the look out for the steam cannisters that will allow you to enter Full Steam mode. Entering Full Steam will destroy any enemy ships near you while also pushing you over the speed of light. How long can you survive? Can you get the high score? Can you eliminate an entire population of peace loving space police? ...Yes? You monster.",
+		"about": "This game was made as part of a 48 hour game jam in which the game was to be based on a song or lyric of our choice. We based our game on 'Full Steam Spacemachine' by Royal Republic and we placed 3rd. We built this game to be played on the Oculus Rift and a custom arcade panel. It can, however also be played with mouse/keyboard or an Xbox controller."
 	},
 	{
 		"name": "Fighter in Simple Times",
 		"img_s": "fist.png",
-		"pitch": "Fight your enemies by manipulating the tilt of the world and charging at your enemies head first."
+		"pitch": "Fight your enemies by manipulating the tilt of the world and charging at your enemies head first.",
+		"about": "This game was developed for my Mobile Development in Android class at University of Wisconsin - Stout. We are using the gyroscope to move the player and you score points by ramming enemies from their side."
 	},
 	{
 		"name": "Legion of You",
 		"img_s": "legion.png",
-		"pitch": "Lead your Legion to victory by controlling the map, and therefore, your enemy. Mixing elements from Age of Empires, Starcraft, Guild Wars 2 World vs World, and League of Legends; Legion of You offers a unique play style for RTS players."
+		"pitch": "Lead your Legion to victory by controlling the map, and therefore, your enemy. Mixing elements from Age of Empires, Starcraft, Guild Wars 2 World vs World, and League of Legends; Legion of You offers a unique play style for RTS players.",
+		"about": "Although this game never left the prototype stage, we had fun using Unreal Engine 4. We decided to move to another project when we discovered the networking was not built for what we needed. We also discovered that Unreal's documentation and forums need some serious work to be of any use to anyone."
 	},
 	{
 		"name": "Home Sweet Gnome",
 		"img_s": "gnome.png",
-		"pitch": "Explore the ruined estate of a disturbed alchemist who is responsible for bringing his lawn ornaments to life. Can you escape the estate before entering a permanent sleep?"
+		"pitch": "Explore the ruined estate of a disturbed alchemist who is responsible for bringing his lawn ornaments to life. Can you escape the estate before entering a permanent sleep?",
+		"about": "This game was made for the University of Wisconsin - Stout Game Design and Development capstone for the Fall 2014 - Spring 2015 class. This game was chosen to go to E3 to compete as an independent game. I was among the original team for this game, but moved to Legion of You for the second semester."
 	},
 	{
 		"name": "Foliage Feud",
 		"img_s": "foliage.png",
-		"pitch": "Your fiancè has been kidnapped by the nefarious Dr. Parsnip. To rescue your beloved, you must help your brother identify the plants of the nearby parks. Do you have what it takes to rescue your fiancè and defeat Dr. Parsnip?"
+		"pitch": "Your fiancè has been kidnapped by the nefarious Dr. Parsnip. To rescue your beloved, you must help your brother identify the plants of the nearby parks. Do you have what it takes to rescue your fiancè and defeat Dr. Parsnip?",
+		"about": "This game was requested by the biology department at the University of Wisconsin - Stout to help teach students to identify plants."
 	}
 ]

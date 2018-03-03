@@ -2,7 +2,15 @@ body {
 	font-family: 'Segoe UI', Arial, sans-serif;
 }
 
+.navbar {
+	background-color: white;
+	position: sticky;
+	top: 0;
+	z-index: 99;
+}
+
 .container {
+	padding-top: 1em;
 	padding-bottom: 2em;
 }
 
@@ -24,19 +32,34 @@ body {
 }
 
 .banner-games {
-	background-image: url('../img/banners/code.jpeg');
+	background-image: url('../img/banners/chess.jpeg');
 }
 
 .banner-comics {
 	background-image: url('../img/banners/plane.jpeg');
 }
 
+.banner-quote {
+	color: white;
+	font-size: 3em;
+	text-align: justify;
+}
+
 .banner-title {
 	color: white;
-	font-size: 36px;
+	font-size: 3em;
 	letter-spacing: 1em;
 	padding-left: 1em;
 	text-align: center;
+}
+
+.banner-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #00000044;
 }
 
 .center {
