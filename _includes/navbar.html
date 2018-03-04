@@ -1,0 +1,46 @@
+<style>
+.navbar {
+	background-color: white;
+	position: sticky;
+	top: 0;
+	z-index: 99;
+}
+</style>
+
+<nav class='navbar navbar-expand-md navbar-light bg-faded'>
+	<button class='navbar-toggler navbar-toggler-right'
+		type='button' data-toggle='collapse'
+		data-target='#navbarContent'
+		aria-controls='navbarContent'
+		aria-expanded='false'
+		aria-label='Toggle Navigation'>
+		<span class='navbar-toggler-icon'></span>
+	</button>
+
+	<a class='navbar-brand' href=''>{{ site.title }}</a>
+
+	<div id='navbarContent'
+		class='collapse navbar-collapse'>
+		<ul class='navbar-nav mr-auto'>
+			<li class='nav-item dropdown'>
+				<a id='navbarDropdownProjects'
+					class='nav-link dropdown-toggle'
+					role='button'
+					data-toggle='dropdown'
+					aria-haspopup='true'
+					aria-expanded='false'>Projects</a>
+					
+				<div class='dropdown-menu'
+					aria-labelledby='navbarDropdownProjects'>
+					{% for collection in site.collections %}
+						{% if collection.label != 'posts' %}
+							<a class='dropdown-item'
+								href='/gallery/{{ collection.label }}'>
+								{{ collection.label | capitalize }}</a>
+						{% endif %}
+					{% endfor %}
+				</div>
+			</li>
+		</ul>
+	</div>
+</nav>

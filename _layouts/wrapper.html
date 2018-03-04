@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<!-- this is the top most wrapper for every page -->
+<head>
+	{% include imports.html %}
+
+	<base href='{{ site.url }}' />
+	<meta charset='UTF-8' />
+	<title>{{ site.title }}</title>
+</head>
+
+<body>
+	{{ content }}
+</body>
+</html>
