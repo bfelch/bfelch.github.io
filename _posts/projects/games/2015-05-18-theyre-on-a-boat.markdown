@@ -1,5 +1,5 @@
 ---
-title: 'They\'re on a Boat'
+title: 'They''re on a Boat'
 date: 2015-05-18 15:00:00 -0600
 thumbnail: 'theyreonaboat.png'
 ---
