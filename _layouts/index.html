@@ -2,8 +2,6 @@
 layout: wrapper
 ---
 
-<!-- <link rel='stylesheet' href='/assets/main.css' /> -->
-
 <style>
 	.blockquote {
 		color: white;
@@ -20,7 +18,20 @@ layout: wrapper
 	}
 	
 	.category-title {
-		font-size: 1.5em;
+		position: absolute;
+		background-color: #00000044;
+		bottom: 0;
+		left: 0;
+		margin: 0;
+		padding: 0 10px;
+		color: white;
+		letter-spacing: 0.3em;
+		text-align: left;
+		text-transform: uppercase;
+	}
+	
+	.category-title h4 {
+		font-weight: 200;
 	}
 	
 	.about-text {
@@ -70,7 +81,7 @@ layout: wrapper
 		<div class='row'>
 				{% for post in site.posts limit:3 %}
 					{% assign date_format = site.minima.date_format | default: '%b %-d, %Y' %}
-					<div class='col container thumbnail'>
+					<div class='col-lg container thumbnail'>
 						<div class='row'>
 							<span class='col post-meta'>{{ post.date | date: date_format }}</span>
 							<a class='col content-justify-right' 
@@ -104,10 +115,8 @@ layout: wrapper
 				{% if collection.label != 'posts' %}
 					<a class='col-lg container thumbnail category-thumb'
 						href='/projects/{{ collection.label }}'>
-						<div class='banner banner-{{collection.label | downcase}}'>
-						</div>
-						<p class='banner-title category-title center'>
-							{{ collection.label | upcase }}</p>
+						<div class='row banner banner-{{collection.label | downcase}}'></div>
+						<div class='category-title'>{{ collection.label | upcase }}</div>
 					</a>
 				{% endif %}
 			{% endfor %}

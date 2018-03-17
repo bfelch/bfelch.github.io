@@ -39,17 +39,16 @@
 	background-color: #00000044;
 }
 
-.banner-title {
+.banner-title h1 {
 	color: white;
-	font-size: 3em;
 	font-weight: 200;
-	letter-spacing: 1em;
-	padding-left: 1em;
+	letter-spacing: 0.6em;
+	padding-left: 0.6em;
 	text-align: center;
 }
 
 .banner-condensed {
-	letter-spacing: 0.6em;
+	letter-spacing: 0.4em;
 }
 
 .img-padding {

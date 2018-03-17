@@ -6,7 +6,9 @@
 
 <div class='banner banner-{{banner_style | downcase}}'>
 	<div class='banner-overlay'></div>
-	<div class='banner-title {{banner_condensed}} center'>{{ banner_title | upcase }}</div>
+	<div class='banner-title {{banner_condensed}} center'>
+		<h1>{{ banner_title | upcase }}</h1>
+	</div>
 </div>
 
 {% assign banner_style = null %}

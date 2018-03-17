@@ -31,15 +31,13 @@
 <link rel='stylesheet' href='/css/bootstrap.min.css'>
 <link rel='stylesheet' href='/css/banner.css'>
 
-	<base href='' />
+	<base href='http://localhost:4000' />
 	<meta charset='UTF-8' />
 	<title>KreativDomain</title>
 </head>
 
 <body>
-	<!-- <link rel='stylesheet' href='/assets/main.css' /> -->
-
-<style>
+	<style>
 	.blockquote {
 		color: white;
 		text-align: justify;
@@ -55,7 +53,20 @@
 	}
 	
 	.category-title {
-		font-size: 1.5em;
+		position: absolute;
+		background-color: #00000044;
+		bottom: 0;
+		left: 0;
+		margin: 0;
+		padding: 0 10px;
+		color: white;
+		letter-spacing: 0.3em;
+		text-align: left;
+		text-transform: uppercase;
+	}
+	
+	.category-title h4 {
+		font-weight: 200;
 	}
 	
 	.about-text {
@@ -195,7 +206,9 @@
 
 <div class='banner banner-updates'>
 	<div class='banner-overlay'></div>
-	<div class='banner-title  center'>UPDATES</div>
+	<div class='banner-title  center'>
+		<h1>UPDATES</h1>
+	</div>
 </div>
 
 
@@ -206,7 +219,7 @@
 		<div class='row'>
 				
 					
-					<div class='col container thumbnail'>
+					<div class='col-lg container thumbnail'>
 						<div class='row'>
 							<span class='col post-meta'>Mar 13, 2018</span>
 							<a class='col content-justify-right' 
@@ -231,7 +244,7 @@
 					</div>
 				
 					
-					<div class='col container thumbnail'>
+					<div class='col-lg container thumbnail'>
 						<div class='row'>
 							<span class='col post-meta'>Mar 20, 2016</span>
 							<a class='col content-justify-right' 
@@ -256,7 +269,7 @@
 					</div>
 				
 					
-					<div class='col container thumbnail'>
+					<div class='col-lg container thumbnail'>
 						<div class='row'>
 							<span class='col post-meta'>Feb 12, 2016</span>
 							<a class='col content-justify-right' 
@@ -288,7 +301,9 @@
 
 <div class='banner banner-projects'>
 	<div class='banner-overlay'></div>
-	<div class='banner-title  center'>PROJECTS</div>
+	<div class='banner-title  center'>
+		<h1>PROJECTS</h1>
+	</div>
 </div>
 
 
@@ -301,20 +316,16 @@
 				
 					<a class='col-lg container thumbnail category-thumb'
 						href='/projects/games'>
-						<div class='banner banner-games'>
-						</div>
-						<p class='banner-title category-title center'>
-							GAMES</p>
+						<div class='row banner banner-games'></div>
+						<div class='category-title'>GAMES</div>
 					</a>
 				
 			
 				
 					<a class='col-lg container thumbnail category-thumb'
 						href='/projects/misc'>
-						<div class='banner banner-misc'>
-						</div>
-						<p class='banner-title category-title center'>
-							MISC</p>
+						<div class='row banner banner-misc'></div>
+						<div class='category-title'>MISC</div>
 					</a>
 				
 			
