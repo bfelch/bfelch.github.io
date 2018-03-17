@@ -1,0 +1,14 @@
+{% if banner_style == null %}
+	{% assign banner_style = banner_title %}
+{% else %}
+	{% assign banner_condensed = 'banner-condensed' %}
+{% endif %}
+
+<div class='banner banner-{{banner_style | downcase}}'>
+	<div class='banner-overlay'></div>
+	<div class='banner-title {{banner_condensed}} center'>{{ banner_title | upcase }}</div>
+</div>
+
+{% assign banner_style = null %}
+{% assign banner_condensed = null %}
+{% assign banner_title = null %}
