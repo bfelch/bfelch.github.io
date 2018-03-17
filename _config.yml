@@ -19,8 +19,15 @@ description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
+
+quote:
+  Most good programmers do programming not because they expect to get
+  paid or get adulation by the public, but because it is fun to program.
+quote_author: Linus Torvalds
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+youtube_username: UCnzrt40jUOSirvUjzfzlpug
 twitter_username: brandonfelch
 github_username:  bfelch
 
@@ -29,6 +36,20 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+
+# https://fontawesome.com/icons/youtube-square?style=brands - to get square logo
+# http://vectorpaint.yaks.co.nz - to recolor vector, be sure to fit canvas to logo
+social:
+  -
+    type: youtube
+    url: https://youtube.com/channel/UCnzrt40jUOSirvUjzfzlpug
+  -
+    type: twitter
+    url: https://twitter.com/brandonfelch
+  -
+    type: github
+    url: https://github.com/bfelch
+    display: false
 
 collections:
   games:

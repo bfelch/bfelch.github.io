@@ -1,284 +1,210 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<!-- this is the top most wrapper for every page -->
+<head>
+	<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
 
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Begin Jekyll SEO tag v2.4.0 -->
-<title>KreativDomain | Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</title>
-<meta name="generator" content="Jekyll v3.7.3" />
-<meta property="og:title" content="KreativDomain" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="KreativDomain" />
-<script type="application/ld+json">
-{"name":"KreativDomain","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@type":"WebSite","url":"http://localhost:4000/","headline":"KreativDomain","@context":"http://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+<link rel='shortcut icon' href='/favicon.ico' />
+<link rel='icon' sizes='16x16 32x32 64x64' href='/favicon.ico' />
+<link rel='icon' type='image/png' sizes='196x196' href='/img/icons/favicon-192.png' />
+<link rel='icon' type='image/png' sizes='160x160' href='/img/icons/favicon-160.png' />
+<link rel='icon' type='image/png' sizes='96x96' href='/img/icons/favicon-96.png' />
+<link rel='icon' type='image/png' sizes='64x64' href='/img/icons/favicon-64.png' />
+<link rel='icon' type='image/png' sizes='32x32' href='/img/icons/favicon-32.png' />
+<link rel='icon' type='image/png' sizes='16x16' href='/img/icons/favicon-16.png' />
+<link rel='apple-touch-icon' href='/img/icons/favicon-57.png' />
+<link rel='apple-touch-icon' sizes='114x114' href='/img/icons/favicon-114.png' />
+<link rel='apple-touch-icon' sizes='72x72' href='/img/icons/favicon-72.png' />
+<link rel='apple-touch-icon' sizes='144x144' href='/img/icons/favicon-144.png' />
+<link rel='apple-touch-icon' sizes='60x60' href='/img/icons/favicon-60.png' />
+<link rel='apple-touch-icon' sizes='120x120' href='/img/icons/favicon-120.png' />
+<link rel='apple-touch-icon' sizes='76x76' href='/img/icons/favicon-76.png' />
+<link rel='apple-touch-icon' sizes='152x152' href='/img/icons/favicon-152.png' />
+<link rel='apple-touch-icon' sizes='180x180' href='/img/icons/favicon-180.png' />
+<meta name='msapplication-TileColor' content='#FFFFFF' />
+<meta name='msapplication-TileImage' content='/img/icons/favicon-144.png' />
+<meta name='msapplication-config' content='/img/icons/browserconfig.xml' />
 
-  <link rel="stylesheet" href="/assets/main.css">
-  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="KreativDomain" />
-  
+<script src='/js/jquery-3.2.1.min.js'></script>
+<script src='/js/bootstrap.bundle.min.js'></script>
+
+<link rel='stylesheet' href='/css/bootstrap.min.css'>
+<link rel='stylesheet' href='/css/banner.css'>
+
+	<base href='http://localhost:4000' />
+	<meta charset='UTF-8' />
+	<title>KreativDomain</title>
 </head>
 
+<body>
+	<style>
+.blockquote {
+	color: white;
+	text-align: justify;
+}
 
-  <body>
+.blockquote-footer {
+	color: lightgrey;
+}
 
-    <header class="site-header" role="banner">
+.category-thumb {
+	max-width: 300px;
+	max-height: 200px;
+	overflow: hidden;
+}
 
-  <div class="wrapper">
-    
-    
-    <a class="site-title" rel="author" href="/">KreativDomain</a>
+.category-title {
+	font-size: 1.5em;
+}
 
-    
-      <nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
+.about-text {
+	max-width: 60%;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	text-align: justify;
+}
+</style>
 
-        <div class="trigger">
-          
-            
-            
-          
-            
-            
-            <a class="page-link" href="/about/">About</a>
-            
-          
-            
-            
-            <a class="page-link" href="/projects/games">Games</a>
-            
-          
-            
-            
-          
-            
-            
-            <a class="page-link" href="/projects/jewelry">Jewelry</a>
-            
-          
-            
-            
-            <a class="page-link" href="/projects/misc">Misc</a>
-            
-          
-            
-            
-          
-            
-            
-          
-        </div>
-      </nav>
-    
-  </div>
-</header>
-
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <div class="home">
-  
-
-  
-
-
-  
-    <h2 class="post-list-heading">Posts</h2>
-    <ul class="post-list">
-      
-      <li>
-        
-        <span class="post-meta">Mar 13, 2018</span>
-        <h3>
-          <a class="post-link" href="/projects/misc/silver-serpent-ring">
-            Silver Serpent Ring
-          </a>
-        </h3>
-        
-      </li>
-      
-      <li>
-        
-        <span class="post-meta">Mar 3, 2018</span>
-        <h3>
-          <a class="post-link" href="/jekyll/update/new-post-test">
-            New Post Test
-          </a>
-        </h3>
-        
-      </li>
-      
-      <li>
-        
-        <span class="post-meta">Mar 3, 2018</span>
-        <h3>
-          <a class="post-link" href="/jekyll/update/welcome-to-jekyll">
-            Welcome to Jekyll!
-          </a>
-        </h3>
-        
-      </li>
-      
-      <li>
-        
-        <span class="post-meta">Mar 20, 2016</span>
-        <h3>
-          <a class="post-link" href="/projects/games/full-steam-space-pixel">
-            Full Steam Space Pixel
-          </a>
-        </h3>
-        
-      </li>
-      
-      <li>
-        
-        <span class="post-meta">Feb 12, 2016</span>
-        <h3>
-          <a class="post-link" href="/projects/games/aqueous">
-            Aqueous
-          </a>
-        </h3>
-        
-      </li>
-      
-      <li>
-        
-        <span class="post-meta">May 18, 2015</span>
-        <h3>
-          <a class="post-link" href="/projects/games/theyre-on-a-boat">
-            They&#39;re on a Boat
-          </a>
-        </h3>
-        
-      </li>
-      
-      <li>
-        
-        <span class="post-meta">May 17, 2015</span>
-        <h3>
-          <a class="post-link" href="/projects/games/full-steam-space-machine">
-            Full Steam Space Machine
-          </a>
-        </h3>
-        
-      </li>
-      
-      <li>
-        
-        <span class="post-meta">May 14, 2015</span>
-        <h3>
-          <a class="post-link" href="/projects/games/legion-of-you">
-            Legion of You
-          </a>
-        </h3>
-        
-      </li>
-      
-      <li>
-        
-        <span class="post-meta">Mar 9, 2015</span>
-        <h3>
-          <a class="post-link" href="/projects/games/fighter-in-simple-times">
-            Fighter in Simple Times
-          </a>
-        </h3>
-        
-      </li>
-      
-      <li>
-        
-        <span class="post-meta">Dec 14, 2014</span>
-        <h3>
-          <a class="post-link" href="/projects/games/home-sweet-gnome">
-            Home Sweet Gnome
-          </a>
-        </h3>
-        
-      </li>
-      
-      <li>
-        
-        <span class="post-meta">May 16, 2014</span>
-        <h3>
-          <a class="post-link" href="/projects/games/foliage-feud">
-            Foliage Feud
-          </a>
-        </h3>
-        
-      </li>
-      
-    </ul>
-
-    <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-  
-
+<div class="banner banner-main">
+	<div class="banner-overlay"></div>
+	<div class="center">
+		<blockquote class="blockquote">
+			<p class="mb-0">Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.</p>
+			<footer class="blockquote-footer">Linus Torvalds</footer>
+		</blockquote>
+	</div>
 </div>
 
-      </div>
-    </main>
+<style>
+.navbar {
+	background-color: white;
+	border-bottom: 1px solid lightgrey;
+	position: sticky;
+	top: 0;
+	z-index: 99;
+}
 
-    <footer class="site-footer h-card">
-  <data class="u-url" href="/"></data>
+.navbar-brand {
+	font-size: 1.4em;
+	font-weight: 200;
+	letter-spacing: -1px;
+}
 
-  <div class="wrapper">
+.navbar-social {
+	padding-top: 8px;
+}
 
-    <h2 class="footer-heading">KreativDomain</h2>
+.navbar-social a {
+	padding-left: 5px;
+	color: black;
+	fill: currentColor;
+}
+</style>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            
-              KreativDomain
-            
-            </li>
-            
-            <li><a class="u-email" href="mailto:felchbrandon@gmail.com">felchbrandon@gmail.com</a></li>
-            
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-md navbar-light bg-faded">
+	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle Navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
 
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-  
-  
-  
-  <li><a href="https://github.com/bfelch"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">bfelch</span></a></li>
-  
-  
-  
-  <li><a href="https://www.twitter.com/brandonfelch"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">brandonfelch</span></a></li>
-  
-  
-  
-</ul>
+	<a class="navbar-brand" href="">KreativDomain</a>
 
-      </div>
+	<div id="navbarContent" class="collapse navbar-collapse">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item dropdown">
+				<a id="navbarDropdownProjects" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+					
+				<div class="dropdown-menu" aria-labelledby="navbarDropdownProjects">
+					
+						
+							<a class="dropdown-item" href="/projects/games">
+								Games</a>
+						
+					
+						
+							<a class="dropdown-item" href="/projects/misc">
+								Misc</a>
+						
+					
+						
+					
+				</div>
+			</li>
+		</ul>
+	</div>
 
-      <div class="footer-col footer-col-3">
-        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
-      </div>
-    </div>
+	<div class="navbar-social">
+		
+			
+				<a href="https://youtube.com/channel/UCnzrt40jUOSirvUjzfzlpug">
+					<svg class="svg-icon" width="25px" height="25px">
+						<image width="100%" height="100%" xlink:href="/img/social/youtube_icon.svg" />
+					</svg>
+				</a>
+			
+		
+			
+				<a href="https://twitter.com/brandonfelch">
+					<svg class="svg-icon" width="25px" height="25px">
+						<image width="100%" height="100%" xlink:href="/img/social/twitter_icon.svg" />
+					</svg>
+				</a>
+			
+		
+			
+		
+	</div>
+</nav>
 
-  </div>
+<div class="container about-text">
+	<div class="row">
+		<div class="col">
+			Hello there!  I'm Brandon, and welcome to my little corner of the internet.  I live by a philosophy of 'Never stop learning, and have fun doing it'.  I love trying new things and intend to keep trying new things until I am physically unable to do so.
+		</div>
+	</div>
+	<br />
+	<div class="row">
+		<div class="col">
+				Below, you can find some of the things I've created.  So far, those things are pretty limited to games, but I'm currently learning the crafts of jewelry metalsmithing and home repair, so come back often to keep an eye on my progress.
+		</div>
+	</div>
+	<br />
+	<div class="row">
+		<div class="col">
+			<!--Head on over to my Youtube channel to check out what I've done already, or-->At this point, I haven't posted any videos to Youtube, but you can hit me up on Twitter if you have an idea on what I should try next.
+		</div>
+	</div>
+</div>
 
-</footer>
+<div class="banner banner-projects">
+	<div class="banner-overlay"></div>
+	<div class="banner-title center">PROJECTS</div>
+</div>
 
+<div class="container">
+	<div class="row">
+		
+			
+				<a class="col-lg container category-thumb" href="/projects/games">
+					<div class="banner banner-games">
+					</div>
+					<p class="banner-title category-title center">
+						GAMES</p>
+				</a>
+			
+		
+			
+				<a class="col-lg container category-thumb" href="/projects/misc">
+					<div class="banner banner-misc">
+					</div>
+					<p class="banner-title category-title center">
+						MISC</p>
+				</a>
+			
+		
+			
+		
+	</div>
+</div>
 
-  </body>
-
+</body>
 </html>
