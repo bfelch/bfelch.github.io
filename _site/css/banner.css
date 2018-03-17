@@ -1,0 +1,51 @@
+.banner {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	position: relative;
+	min-height: 40vh;
+}
+
+.banner-games {
+	background-image: url('/img/banners/chess.jpeg');
+}
+
+.banner-misc {
+	background-image: url('/img/banners/vintage_cars.jpeg');
+}
+
+.banner-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #00000044;
+}
+
+.banner-title {
+	color: white;
+	font-size: 3em;
+	letter-spacing: 1em;
+	padding-left: 1em;
+	text-align: center;
+}
+
+.img-padding {
+	padding: 20px;
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.container {
+	padding-top: 1em;
+	padding-bottom: 2em;
+}

@@ -1,11 +1,19 @@
 ---
 layout: wrapper
 ---
-<!-- include the showcase banner and title -->
-<!-- include the navbar -->
 {% include navbar.html %}
 
-<h3>{{ page.title }}</h3>
-<hr>
+<div class='banner banner-{{page.categories[1]}}'>
+	<div class='banner-overlay'></div>
+	<div class='banner-title center'>{{ page.title | upcase }}</div>
+</div>
 
-{{ content }}
+<div class='container'>
+	<div class='row'>
+		<div>
+			<img align=left class='img-padding'
+				src='/img/projects/{{page.categories[1]}}/{{page.thumbnail}}' />
+			{{ content }}
+		</div>
+	</div>
+</div>
