@@ -14,6 +14,10 @@
 	min-height: 100vh;
 }
 
+.banner-updates {
+	background-image: url('/img/banners/news.jpeg');
+}
+
 .banner-projects {
 	background-image: url('/img/banners/construction.jpeg');
 }
@@ -38,9 +42,14 @@
 .banner-title {
 	color: white;
 	font-size: 3em;
+	font-weight: 200;
 	letter-spacing: 1em;
 	padding-left: 1em;
 	text-align: center;
+}
+
+.banner-condensed {
+	letter-spacing: 0.6em;
 }
 
 .img-padding {
@@ -57,4 +66,20 @@
 .container {
 	padding-top: 1em;
 	padding-bottom: 2em;
+}
+
+.thumbnail {
+	max-width: 300px;
+}
+
+.thumbnail a {
+	color: lightgrey;
+}
+
+.thumbnail h3 {
+	font-weight: 200;
+}
+
+a {
+	cursor: pointer;
 }

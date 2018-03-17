@@ -3,10 +3,9 @@ layout: wrapper
 ---
 {% include navbar.html %}
 
-<div class='banner banner-{{page.categories[1]}}'>
-	<div class='banner-overlay'></div>
-	<div class='banner-title center'>{{ page.title | upcase }}</div>
-</div>
+{% assign banner_style = page.categories[1] %}
+{% assign banner_title = page.title %}
+{% include banner_widget.html %}
 
 <div class='container'>
 	<div class='row'>

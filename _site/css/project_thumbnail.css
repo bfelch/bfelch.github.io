@@ -2,10 +2,6 @@
 	max-width: 380px;
 }
 
-.proj-thumb a {
-	color: lightgrey;
-}
-
 .proj-thumb-title {
 	position: absolute;
 	background-color: #00000044;
