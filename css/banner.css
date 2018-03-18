@@ -40,19 +40,11 @@
 }
 
 .banner-title h1 {
-	color: white;
 	font-weight: 200;
-	letter-spacing: 0.6em;
-	padding-left: 0.6em;
-	text-align: center;
 }
 
 .banner-condensed {
 	letter-spacing: 0.4em;
-}
-
-.img-padding {
-	padding: 15px 40px 40px 15px;
 }
 
 .center {
@@ -81,4 +73,29 @@
 
 a {
 	cursor: pointer;
+}
+
+@media (min-width: 768px) {
+	.banner-title h1 {
+		color: white;
+		letter-spacing: 0.6em;
+		padding-left: 0.6em;
+		text-align: center;
+	}
+
+	.img-padding {
+		padding: 15px 40px 40px 15px;
+	}
+}
+
+@media (max-width: 768px) {
+	.banner-title h1 {
+		letter-spacing: 0.2em;
+		margin-bottom: 0;
+	}
+
+	.d-md-none .container {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
 }
