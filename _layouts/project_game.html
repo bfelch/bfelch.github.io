@@ -2,3 +2,8 @@
 layout: project
 ---
 {{ content }}
+
+{% if page.play %}
+	<br/>
+	Play the game <a href='{{page.play}}'>here</a>!
+{% endif %}

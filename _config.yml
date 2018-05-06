@@ -70,6 +70,7 @@ defaults:
       path: _posts/projects/games
     values:
       categories: projects games
+      layout: project_game
   -
     scope:
       path: _posts/projects/jewelry
