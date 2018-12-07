@@ -2,7 +2,7 @@
 title: 'Transcribable Survival'
 date: 2018-04-23 15:00:00 -0600
 thumbnail: 'transcribe.png'
-play: 'https://bfelch.itch.io/transcribable-survival'
+itch_io: 'https://bfelch.itch.io/transcribable-survival'
 ---
 Humanity has ended and all you have left are your typing skills and basic survival instincts.  How long can you survive against the horde when you must type out every action?
 <!-- more -->

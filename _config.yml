@@ -41,6 +41,7 @@ social:
   -
     type: youtube
     url: https://youtube.com/channel/UC8PTwguNLuEhs0y8dTwC_4Q
+    display: false
   -
     type: twitter
     url: https://twitter.com/brandonfelch

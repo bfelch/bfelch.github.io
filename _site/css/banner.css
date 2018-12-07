@@ -10,16 +10,16 @@
 }
 
 .banner-main {
-	background-image: url('/img/banners/train_tracks.jpeg');
+	background-image: url('/img/banners/nara_temple.jpg');
 	min-height: 100vh;
 }
 
 .banner-updates {
-	background-image: url('/img/banners/news.jpeg');
+	background-image: url('/img/banners/heian_shrine.jpg');
 }
 
 .banner-projects {
-	background-image: url('/img/banners/construction.jpeg');
+	background-image: url('/img/banners/ghibli_museum.jpg');
 }
 
 .banner-games {
