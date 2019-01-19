@@ -1,0 +1,28 @@
+---
+layout: wrapper
+---
+{% include navbar.html %}
+
+{% assign banner_style = page.categories[1] %}
+{% assign banner_title = page.title %}
+{% include banner.html %}
+
+<div class='container'>
+	<div class='row d-none d-md-block'>
+		<div>
+			<img align=left class='img-padding'
+				src='/img/projects/{{page.categories[1]}}/{{page.thumbnail}}' />
+			{{ content }}
+		</div>
+	</div>
+	<div class='row d-md-none'>
+		<div class='col'>
+			<img class='mx-auto d-block'
+				src='/img/projects/{{page.categories[1]}}/{{page.thumbnail}}' />
+		</div>
+	</div>
+	<br/>
+	<div class='row text-justify d-md-none'>
+		{{ content }}
+	</div>
+</div>

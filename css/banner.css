@@ -10,24 +10,20 @@
 }
 
 .banner-main {
-	background-image: url('/img/banners/nara_temple.jpg');
+	background-image: url('/img/banners/frog_brown_green.jpg');
 	min-height: 100vh;
 }
 
 .banner-updates {
-	background-image: url('/img/banners/heian_shrine.jpg');
+	background-image: url('/img/banners/frog_brown_grey.jpg');
 }
 
 .banner-projects {
+	background-image: url('/img/banners/nara_temple.jpg');
+}
+
+.banner-activities {
 	background-image: url('/img/banners/ghibli_museum.jpg');
-}
-
-.banner-games {
-	background-image: url('/img/banners/chess.jpeg');
-}
-
-.banner-misc {
-	background-image: url('/img/banners/vintage_cars.jpeg');
 }
 
 .banner-overlay {
@@ -45,6 +41,12 @@
 
 .banner-condensed {
 	letter-spacing: 0.4em;
+}
+
+.nothing {
+	font-weight: 150;
+	letter-spacing: 0.4em;
+	text-align: center;
 }
 
 .center {
@@ -69,6 +71,10 @@
 
 .thumbnail h3 {
 	font-weight: 200;
+}
+
+body {
+	color: darkgrey;
 }
 
 a {

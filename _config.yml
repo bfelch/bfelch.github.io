@@ -13,47 +13,42 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: KreativDomain
-email: felchbrandon@gmail.com
+title: Eat the Frog
+
+copyright_year: "2019"
+company_name: Eat the Frog, LLC
+
+email: brandon.felch@ieatfrog.com
 description: >-
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Explore what inspires you.
 
 quote: >-
-  Most good programmers do programming not because they expect to get
-  paid or get adulation by the public, but because it is fun to program.
-quote_author: Linus Torvalds
+  Eat a live frog first thing in the morning and nothing worse will happen to you the rest of the day.
+author: Mark Twain
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 excerpt_separator: <!-- more -->
 
-# Build settings
-markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
-
-# https://fontawesome.com/icons/youtube-square?style=brands - to get square logo
-# http://vectorpaint.yaks.co.nz - to recolor vector, be sure to fit canvas to logo
 social:
+    # type: sitename
+    # url: https://sitename.com
+    # display: false
   -
     type: youtube
-    url: https://youtube.com/channel/UC8PTwguNLuEhs0y8dTwC_4Q
-    display: false
+    url: https://youtube.com/channel/UCnzrt40jUOSirvUjzfzlpug
   -
     type: twitter
-    url: https://twitter.com/brandonfelch
+    username: brandonfelch
+    url: https://twitter.com/
   -
     type: github
-    url: https://github.com/bfelch
-    display: false
+    username: bfelch
+    url: https://github.com/
 
 collections:
-  games:
-  #jewelry:
-  misc:
+  activities:
+  projects:
 
 defaults:
   -
@@ -63,25 +58,26 @@ defaults:
       permalink: /:categories/:title
   -
     scope:
+      path: _posts/activities
+    values:
+      layout: item
+  -
+    scope:
       path: _posts/projects
     values:
-      layout: project
+      layout: item
   -
     scope:
       path: _posts/projects/games
     values:
       categories: projects games
-      layout: project_game
-  -
-    scope:
-      path: _posts/projects/jewelry
-    values:
-      categories: projects jewelry
-  -
-    scope:
-      path: _posts/projects/misc
-    values:
-      categories: projects misc
+      layout: game
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

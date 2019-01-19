@@ -1,9 +1,0 @@
----
-title: 'Aqueous'
-date: 2016-02-12 15:00:00 -0600
-thumbnail: 'aqueous.png'
----
-Use your fingers to control your blobby. Avoiding the obstacles will earn you coins to buy your favorite colors for your blob.
-<!-- more -->
-<br/><br/>
-This is my first publicly released game and is available on the Google Play store for android devices.

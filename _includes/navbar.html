@@ -36,35 +36,22 @@
 
 	<a class='navbar-brand' href='/'>{{ site.title }}</a>
 
-	<div id='navbarContent'
-		class='collapse navbar-collapse'>
-		<ul class='navbar-nav mr-auto'>
-			<li class='nav-item dropdown'>
-				<a id='navbarDropdownProjects'
-					class='nav-link dropdown-toggle'
-					role='button'
-					data-toggle='dropdown'
-					aria-haspopup='true'
-					aria-expanded='false'>Projects</a>
-					
-				<div class='dropdown-menu'
-					aria-labelledby='navbarDropdownProjects'>
-					{% for collection in site.collections %}
-						{% if collection.label != 'posts' %}
-							<a class='dropdown-item'
-								href='/projects/{{ collection.label }}'>
-								{{ collection.label | capitalize }}</a>
-						{% endif %}
-					{% endfor %}
-				</div>
-			</li>
-		</ul>
-	</div>
+	<ul class='navbar-nav mr-auto'>
+		{% for collection in site.collections %}
+			{% if collection.label != 'posts' %}
+				<li class='nav-item'>
+					<a class='nav-link active'
+						href='/{{ collection.label }}'>
+						{{ collection.label | capitalize }}</a>
+				</li>
+			{% endif %}
+		{% endfor %}
+	</ul>
 
 	<div class='navbar-social'>
 		{% for social in site.social %}
 			{% if social.display != false %}
-				<a href='{{social.url | escape}}'>
+				<a href='{{social.url | escape}}{{social.username}}'>
 					<svg class='svg-icon' width='25px' height='25px'>
 						<image width='100%' height='100%' xlink:href='/img/social/{{social.type}}_icon.svg' />
 					</svg>

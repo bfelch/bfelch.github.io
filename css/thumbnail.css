@@ -1,0 +1,30 @@
+.thumbnail {
+	max-width: 380px;
+}
+
+.thumbnail-title {
+	position: absolute;
+	background-color: #00000044;
+	bottom: 0;
+	left: 0;
+	margin: 0 15px;
+	padding: 0 10px;
+	color: white;
+	letter-spacing: 0.3em;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.thumbnail-desc {
+	height: 120px;
+	overflow: hidden;
+}
+
+.thumbnail-fade {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 50px;
+	background-image: linear-gradient(to bottom, transparent, white);
+}
