@@ -10,17 +10,19 @@ title: Gallery
 
 <div class='container'>
 	<div class='row'>
-		{% if site.posts.size == 0 %}
-			<div class='col nothing'>
-				NOTHING TO DISPLAY
-			</div>
-		{% endif %}
+		{% assign post_count = 0 %}
 		{% for post in site.posts %}
 			{% assign category = page.title | downcase %}
 			{% if post.categories contains category %}
+				{% assign post_count = post_count + 1 %}
 				{% assign post_type = page.title %}
 				{% include thumbnail.html %}
 			{% endif %}
 		{% endfor %}
+		{% if post_count == 0 %}
+			<div class='col nothing'>
+				NOTHING TO DISPLAY
+			</div>
+		{% endif %}
 	</div>
 </div>
