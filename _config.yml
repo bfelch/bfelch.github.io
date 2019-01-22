@@ -47,7 +47,7 @@ social:
     url: https://github.com/
 
 collections:
-  activities:
+  adventures:
   projects:
 
 defaults:
@@ -56,16 +56,17 @@ defaults:
       type: posts
     values:
       permalink: /:categories/:title
+      layout: post
   -
     scope:
-      path: _posts/activities
+      path: _posts/adventures
     values:
-      layout: item
+      layout: post
   -
     scope:
       path: _posts/projects
     values:
-      layout: item
+      layout: post
   -
     scope:
       path: _posts/projects/games

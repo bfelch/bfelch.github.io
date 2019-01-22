@@ -1,4 +1,4 @@
 ---
 layout: gallery
-title: activities
+title: adventures
 ---
