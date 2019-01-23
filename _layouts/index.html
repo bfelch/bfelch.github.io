@@ -84,8 +84,8 @@ layout: wrapper
 					<div class='row'>
 						<span class='col post-meta'>{{ post.date | date: date_format }}</span>
 						<a class='col content-justify-right' 
-							href='/{{post.categories | join: "/"}}'>
-							/{{ post.categories | join: '/' }}</a>
+							href='/{{post.categories[0]}}'>
+							/{{ post.categories[0] }}</a>
 					</div>
 					<div class='row'>
 						<h3 class='col'>
