@@ -39,12 +39,14 @@ social:
     url: https://youtube.com/channel/UCnzrt40jUOSirvUjzfzlpug
   -
     type: twitter
-    username: brandonfelch
+    username: EatTheFrogLLC
     url: https://twitter.com/
   -
     type: github
     username: bfelch
     url: https://github.com/
+
+store: http://www.redbubble.com/people/EatTheFrog/portfolio
 
 collections:
   adventures:

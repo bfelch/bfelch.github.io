@@ -42,10 +42,22 @@
 				<li class='nav-item'>
 					<a class='nav-link active'
 						href='/{{ collection.label }}'>
-						{{ collection.label | capitalize }}</a>
+						{{ collection.label | capitalize }}
+					</a>
 				</li>
 			{% endif %}
 		{% endfor %}
+	</ul>
+	
+	<ul class='navbar-nav navbar-right'>
+		<li class='nav-item'>
+			{% if site.store != null %}
+				<a class='nav-link active'
+					href='{{ site.store }}'>
+					Store
+				</a>
+			{% endif %}
+		</li>
 	</ul>
 
 	<div class='navbar-social'>
