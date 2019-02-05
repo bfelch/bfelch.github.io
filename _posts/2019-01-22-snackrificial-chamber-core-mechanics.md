@@ -1,9 +1,8 @@
 ---
-title: 'Snackrificial Chamber - Core Mechanics'
+title: 'Core Mechanics'
 project: 'Snackrificial Chamber'
 series: 'Let''s Make a Game'
-thumbnail: 'snackrifice.png'
-categories: projects games
+categories: updates games
 date: 2019-01-22 16:00:00 -0600
 video: https://youtu.be/-FPGDKYEc-k
 ---
