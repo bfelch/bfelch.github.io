@@ -77,6 +77,7 @@ defaults:
       layout: game
 
 # Build settings
+future: false
 markdown: kramdown
 theme: minima
 plugins:
