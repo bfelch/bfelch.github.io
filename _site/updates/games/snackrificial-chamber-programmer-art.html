@@ -127,15 +127,16 @@
 		
 	</div>
 </nav>
-<link rel='stylesheet' href='/css/thumbnail.css' />
 
 
 
 
-<div class='banner banner-adventures d-none d-md-block'>
+
+
+<div class='banner banner-updates d-none d-md-block'>
 	<div class='banner-overlay'></div>
-	<div class='banner-title  center'>
-		<h1>ADVENTURES</h1>
+	<div class='banner-title banner-condensed center'>
+		<h1>SNACKRIFICIAL CHAMBER<BR/>PROGRAMMER ART</h1>
 	</div>
 </div>
 
@@ -144,7 +145,7 @@
 	<div class='container'>
 		<div class='row'>
 			<div class='col banner-title text-center'>
-				<h1>ADVENTURES</h1>
+				<h1>SNACKRIFICIAL CHAMBER<BR/>PROGRAMMER ART</h1>
 			</div>
 		</div>
 	</div>
@@ -156,23 +157,57 @@
 
 
 <div class='container'>
-	<div class='row'>
-		
-		
-			
-			
-		
-			
-			
-		
-			
-			
-		
-		
-			<div class='col nothing'>
-				NOTHING TO DISPLAY
+	
+		<div class='row'>
+			<div class='col'>
+				<div id='ytplayer' class='mx-auto d-block'></div>
 			</div>
-		
+			<script>
+	// Load the IFrame Player API code asynchronously.
+	var tag = document.createElement('script');
+	tag.src = 'https://www.youtube.com/player_api';
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	
+	// Replace the 'ytplayer' element with an <iframe> and
+	// YouTube player after the API code downloads.
+	var player;
+	function onYouTubePlayerAPIReady() {
+		player = new YT.Player('ytplayer', {
+		height: '360',
+		width: '640',
+		videoId: 'CtadnriikNI'
+		});
+	}
+</script>
+		</div>
+
+		<br/>
+	
+	<div class='row d-none d-md-block'>
+		<div>
+			
+			<p>I continue the remake by creating new models for the chicken, conveyor belt, and ritual circle as well as creating floor and wall tiles.</p>
+
+<!-- more -->
+
+<p>I use a combination of MagicaVoxel, Photoshop, and remapped UVs to create the models I need for my game.</p>
+
+		</div>
+	</div>
+	<div class='row d-md-none'>
+		<div class='col'>
+			
+		</div>
+	</div>
+	<br/>
+	<div class='row text-justify d-md-none'>
+		<p>I continue the remake by creating new models for the chicken, conveyor belt, and ritual circle as well as creating floor and wall tiles.</p>
+
+<!-- more -->
+
+<p>I use a combination of MagicaVoxel, Photoshop, and remapped UVs to create the models I need for my game.</p>
+
 	</div>
 </div>
 

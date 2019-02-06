@@ -75,6 +75,12 @@ defaults:
     values:
       categories: projects games
       layout: game
+  -
+    scope:
+      path: _posts/projects/games/updates
+    values:
+      categories: updates games
+      layout: post
 
 # Build settings
 future: false
