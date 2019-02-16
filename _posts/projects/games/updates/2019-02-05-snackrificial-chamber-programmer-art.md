@@ -6,7 +6,7 @@ categories: updates games
 date: 2019-02-05 16:00:00 -0600
 youtube: CtadnriikNI
 ---
-I continue the remake by creating new models for the chicken, conveyor belt, and ritual circle as well as creating floor and wall tiles.
+I continue the remake by creating new models for the chicken, conveyor belt, and ritual circle as well as creating floor and wall tiles.  These models replace all of the placeholder art created in the previous episode.
 
 <!-- more -->
 

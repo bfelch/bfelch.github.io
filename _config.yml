@@ -84,6 +84,7 @@ defaults:
 
 # Build settings
 future: false
+timezone: America/Chicago
 markdown: kramdown
 theme: minima
 plugins:
