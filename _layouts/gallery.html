@@ -16,7 +16,11 @@ title: Gallery
 			{% if post.categories contains category %}
 				{% assign post_count = 1 %}
 				{% assign post_type = page.title %}
-				{% include thumbnail.html %}
+				{% if post.thumbnail %}
+					{% include thumbnail.html %}
+				{% else %}
+					{% include update.html %}
+				{% endif %}
 			{% endif %}
 		{% endfor %}
 		{% if post_count == 0 %}

@@ -11,3 +11,5 @@ Happy snacking!
 <!-- more -->
 
 You've been tasked with solving the logistics problems of a local cult and their snack factory.  It's your job to fix the conveyor belts and prepare the chickens for consumption.
+
+This game was initiall created for Ludum Dare 43 under the theme of 'Sacrifices Must be Made'.  I decided to rebuild the game for mobile while fixing some of the issues that came up due to creating the game in a limited timeframe.

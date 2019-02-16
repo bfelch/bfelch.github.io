@@ -10,8 +10,12 @@ layout: post
 	</a>
 {% endif %}
 
-<!-- {% for post in site.posts %}
-	{% if post.project == page.title %}
-		{{post.title}}
-	{% endif %}
-{% endfor %} -->
+<div class='container'>
+	<div class='row'>
+		{% for post in site.posts %}
+			{% if post.project == page.title %}
+				{% include update.html %}
+			{% endif %}
+		{% endfor %}
+	</div>
+</div>
