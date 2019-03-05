@@ -127,15 +127,16 @@
 		
 	</div>
 </nav>
-<link rel='stylesheet' href='/css/thumbnail.css' />
 
 
 
 
-<div class='banner banner-projects d-none d-md-block'>
+
+
+<div class='banner banner-updates d-none d-md-block'>
 	<div class='banner-overlay'></div>
-	<div class='banner-title  center'>
-		<h1>PROJECTS</h1>
+	<div class='banner-title banner-condensed center'>
+		<h1>SNACKRIFICIAL CHAMBER<BR/>LEVEL EDITING</h1>
 	</div>
 </div>
 
@@ -144,7 +145,7 @@
 	<div class='container'>
 		<div class='row'>
 			<div class='col banner-title text-center'>
-				<h1>PROJECTS</h1>
+				<h1>SNACKRIFICIAL CHAMBER<BR/>LEVEL EDITING</h1>
 			</div>
 		</div>
 	</div>
@@ -155,61 +156,68 @@
 
 
 
+<style>
+	.update a {
+		color: lightgrey;
+	}
+</style>
+
 <div class='container'>
-	<div class='row'>
-		
-		
+	
+		<div class='row'>
+			<div class='col'>
+				<div id='ytplayer' class='mx-auto d-block'></div>
+			</div>
+			<script>
+	// Load the IFrame Player API code asynchronously.
+	var tag = document.createElement('script');
+	tag.src = 'https://www.youtube.com/player_api';
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	
+	// Replace the 'ytplayer' element with an <iframe> and
+	// YouTube player after the API code downloads.
+	var player;
+	function onYouTubePlayerAPIReady() {
+		player = new YT.Player('ytplayer', {
+		height: '360',
+		width: '640',
+		videoId: 'NozY6irih1A'
+		});
+	}
+</script>
+		</div>
+
+		<br/>
+	
+	<div class='row d-none d-md-block'>
+		<div>
 			
-			
-		
-			
-			
-		
-			
-			
-		
-			
-			
-		
-			
-			
-				
-				
-				
-					<div class='col-lg container thumbnail'>
-	<div class='row justify-content-center d-none d-md-block'>
-		<div class='col mx-auto text-center'>
-			<img src='/img//projects/snackrifice.png' />
-			<div class='thumbnail-title'>Snackrificial Chamber</div>
+			<p>I make an editor to help speed up the design and creation of levels using a custom editor in Unity.</p>
+
+<!-- more -->
+
+<p>With this editor, I can place, rotate, and delete tiles to create a level.  After the level is designed, I can then save it to a specified folder and file name as an xml file.  This file can also be loaded in order to edit the level and eventually build it in game.</p>
+
+<p>I use Unity and Visual Studio Code to create the editor.</p>
+
 		</div>
 	</div>
 	<div class='row d-md-none'>
-		<div class='col mx-auto'>
-			<h3>Snackrificial Chamber</h3>
-		</div>
-	</div>
-	<div class='row justify-content-center'>
-		<div class='col mx-auto text-justify'>
-			<div class='thumbnail-desc'><p>Not sure how, but you managed to get yourself roped in with a cult led by the greatest snackers in history.  Please the Great Ones by preparing their favorite dish.  But be careful, if you don’t meet their requirements you’ll have to do it again.</p>
-
-<p>Happy snacking!</p>
-
-</div>
-			<div class='thumbnail-fade'></div>
-		</div>
-	</div>
-	<div class='row justify-content-center'>
-		<div class='col ms-auto text-right'>
-			<a href='/projects/games/snackrificial-chamber'>more</a><br/>
-		</div>
-	</div>
-</div>
-
-
-				
+		<div class='col'>
 			
-		
-		
+		</div>
+	</div>
+	<br/>
+	<div class='row text-justify d-md-none'>
+		<p>I make an editor to help speed up the design and creation of levels using a custom editor in Unity.</p>
+
+<!-- more -->
+
+<p>With this editor, I can place, rotate, and delete tiles to create a level.  After the level is designed, I can then save it to a specified folder and file name as an xml file.  This file can also be loaded in order to edit the level and eventually build it in game.</p>
+
+<p>I use Unity and Visual Studio Code to create the editor.</p>
+
 	</div>
 </div>
 
