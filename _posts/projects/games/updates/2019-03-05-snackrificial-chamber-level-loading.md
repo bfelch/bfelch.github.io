@@ -3,7 +3,7 @@ title: 'Level Loading'
 project: 'Snackrificial Chamber'
 series: 'Let''s Make a Game'
 categories: updates games
-date: 2019-03-03 16:00:00 -0600
+date: 2019-03-05 16:00:00
 youtube: n2x9gAEYqys
 ---
 I make a level selection menu and a level load system that will serve as the level hub for the entire game.

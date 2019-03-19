@@ -3,7 +3,7 @@ title: 'Level Editing'
 project: 'Snackrificial Chamber'
 series: 'Let''s Make a Game'
 categories: updates games
-date: 2019-02-19 16:00:00 -0600
+date: 2019-02-19 16:00:00
 youtube: NozY6irih1A
 ---
 I make an editor to help speed up the design and creation of levels using a custom editor in Unity.

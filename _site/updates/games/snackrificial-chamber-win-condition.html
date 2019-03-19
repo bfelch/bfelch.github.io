@@ -127,15 +127,16 @@
 		
 	</div>
 </nav>
-<link rel='stylesheet' href='/css/thumbnail.css' />
 
 
 
 
-<div class='banner banner-adventures d-none d-md-block'>
+
+
+<div class='banner banner-updates d-none d-md-block'>
 	<div class='banner-overlay'></div>
-	<div class='banner-title  center'>
-		<h1>ADVENTURES</h1>
+	<div class='banner-title banner-condensed center'>
+		<h1>SNACKRIFICIAL CHAMBER<BR/>WIN CONDITION</h1>
 	</div>
 </div>
 
@@ -144,7 +145,7 @@
 	<div class='container'>
 		<div class='row'>
 			<div class='col banner-title text-center'>
-				<h1>ADVENTURES</h1>
+				<h1>SNACKRIFICIAL CHAMBER<BR/>WIN CONDITION</h1>
 			</div>
 		</div>
 	</div>
@@ -155,45 +156,68 @@
 
 
 
+<style>
+	.update a {
+		color: lightgrey;
+	}
+</style>
+
 <div class='container'>
-	<div class='row'>
-		
-		
-			
-			
-		
-			
-			
-		
-			
-			
-		
-			
-			
-		
-			
-			
-		
-			
-			
-		
-			
-			
-		
-			
-			
-		
-			
-			
-		
-			
-			
-		
-		
-			<div class='col nothing'>
-				NOTHING TO DISPLAY
+	
+		<div class='row'>
+			<div class='col'>
+				<div id='ytplayer' class='mx-auto d-block'></div>
 			</div>
-		
+			<script>
+	// Load the IFrame Player API code asynchronously.
+	var tag = document.createElement('script');
+	tag.src = 'https://www.youtube.com/player_api';
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	
+	// Replace the 'ytplayer' element with an <iframe> and
+	// YouTube player after the API code downloads.
+	var player;
+	function onYouTubePlayerAPIReady() {
+		player = new YT.Player('ytplayer', {
+		height: '360',
+		width: '640',
+		videoId: 'Ou5TOl0lFvs'
+		});
+	}
+</script>
+		</div>
+
+		<br/>
+	
+	<div class='row d-none d-md-block'>
+		<div>
+			
+			<p>I add a basic win condition that requires all chickens to be sacrificed so a level can end and a new one selected.</p>
+
+<!-- more -->
+
+<p>The initial win condition is an easy one.  The player simply needs to sacrifice all chickens dispensed from the pipe.  Eventually, I’ll add more complex win conditions, but for now I just want to finish the main game state loop.</p>
+
+<p>I use Unity and Visual Studio Code.</p>
+
+		</div>
+	</div>
+	<div class='row d-md-none'>
+		<div class='col'>
+			
+		</div>
+	</div>
+	<br/>
+	<div class='row text-justify d-md-none'>
+		<p>I add a basic win condition that requires all chickens to be sacrificed so a level can end and a new one selected.</p>
+
+<!-- more -->
+
+<p>The initial win condition is an easy one.  The player simply needs to sacrifice all chickens dispensed from the pipe.  Eventually, I’ll add more complex win conditions, but for now I just want to finish the main game state loop.</p>
+
+<p>I use Unity and Visual Studio Code.</p>
+
 	</div>
 </div>
 

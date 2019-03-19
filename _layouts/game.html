@@ -5,15 +5,22 @@ layout: post
 
 {% if page.itch_io %}
 	<br/>
-	<a href='{{page.itch_io}}' style='float: right;'>
+	<a href='https://bfelch.itch.io/{{page.itch_io}}' style='float: right;'>
 		<img width='115px' height='46px' src='/img/social/itch_bw.png' />
 	</a>
 {% endif %}
 
 <div class='container'>
 	<div class='row'>
+		{% assign post_count = 0 %}
 		{% for post in site.posts %}
 			{% if post.project == page.title %}
+				{% assign row_count = post_count | modulo: 3 %}
+				{% if post_count > 0 and row_count == 0 %}
+	</div>
+	<div class='row'>
+				{% endif %}
+				{% assign post_count = post_count | plus: 1 %}
 				{% include update.html %}
 			{% endif %}
 		{% endfor %}

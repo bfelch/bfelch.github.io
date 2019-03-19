@@ -14,7 +14,12 @@ title: Gallery
 		{% for post in site.posts %}
 			{% assign category = page.title | downcase %}
 			{% if post.categories contains category %}
-				{% assign post_count = 1 %}
+				{% assign row_count = post_count | modulo: 3 %}
+				{% if post_count > 0 and row_count == 0 %}
+	</div>
+	<div class='row'>
+				{% endif %}
+				{% assign post_count = post_count | plus: 1 %}
 				{% assign post_type = page.title %}
 				{% if post.thumbnail %}
 					{% include thumbnail.html %}
