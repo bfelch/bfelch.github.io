@@ -133,10 +133,10 @@
 
 
 
-<div class='banner banner-projects d-none d-md-block'>
+<div class='banner banner-updates d-none d-md-block'>
 	<div class='banner-overlay'></div>
 	<div class='banner-title banner-condensed center'>
-		<h1>TRANSCRIBABLE SURVIVAL</h1>
+		<h1>SNACKRIFICIAL CHAMBER<BR/>CAMERA CONTROLS</h1>
 	</div>
 </div>
 
@@ -145,7 +145,7 @@
 	<div class='container'>
 		<div class='row'>
 			<div class='col banner-title text-center'>
-				<h1>TRANSCRIBABLE SURVIVAL</h1>
+				<h1>SNACKRIFICIAL CHAMBER<BR/>CAMERA CONTROLS</h1>
 			</div>
 		</div>
 	</div>
@@ -164,106 +164,60 @@
 
 <div class='container'>
 	
+		<div class='row'>
+			<div class='col'>
+				<div id='ytplayer' class='mx-auto d-block'></div>
+			</div>
+			<script>
+	// Load the IFrame Player API code asynchronously.
+	var tag = document.createElement('script');
+	tag.src = 'https://www.youtube.com/player_api';
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	
+	// Replace the 'ytplayer' element with an <iframe> and
+	// YouTube player after the API code downloads.
+	var player;
+	function onYouTubePlayerAPIReady() {
+		player = new YT.Player('ytplayer', {
+		height: '360',
+		width: '640',
+		videoId: '4l73BOsLUaw'
+		});
+	}
+</script>
+		</div>
+
+		<br/>
+	
 	<div class='row d-none d-md-block'>
 		<div>
 			
-				<img align=left class='img-padding'
-					src='/img/projects/transcribe.png' />
-			
-			<p>Humanity has ended and all you have left are your typing skills and basic survival instincts.  How long can you survive against the horde when you must type out every action?
+			<p>I add the ability to pan the camera, allowing for more freedom in designing levels.</p>
+
 <!-- more -->
-<br /><br />
-This game was developed for Ludum Dare 41 using the theme ‘Combine Two Incompatible Genres’ so  I combined survival and text adventure.  This was my first time participating in Ludum Dare.</p>
 
+<p>I default the starting position of the camera to the middle of the selected level and set bounds based on the max and min X and Z positions of level tiles.  This lets me design rooms wwith more variance in size and shape.</p>
 
+<p>I use Unity and Visual Studio Code.</p>
 
-	<br/>
-	<a href='https://bfelch.itch.io/transcribable-survival' style='float: right;'>
-		<img width='115px' height='46px' src='/img/social/itch_bw.png' />
-	</a>
-
-
-<div class='container'>
-	<div class='row'>
-		
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-	</div>
-</div>
 		</div>
 	</div>
 	<div class='row d-md-none'>
 		<div class='col'>
 			
-				<img class='mx-auto d-block'
-					src='/img/projects/transcribe.png' />
-			
 		</div>
 	</div>
 	<br/>
 	<div class='row text-justify d-md-none'>
-		<p>Humanity has ended and all you have left are your typing skills and basic survival instincts.  How long can you survive against the horde when you must type out every action?
+		<p>I add the ability to pan the camera, allowing for more freedom in designing levels.</p>
+
 <!-- more -->
-<br /><br />
-This game was developed for Ludum Dare 41 using the theme ‘Combine Two Incompatible Genres’ so  I combined survival and text adventure.  This was my first time participating in Ludum Dare.</p>
 
+<p>I default the starting position of the camera to the middle of the selected level and set bounds based on the max and min X and Z positions of level tiles.  This lets me design rooms wwith more variance in size and shape.</p>
 
+<p>I use Unity and Visual Studio Code.</p>
 
-	<br/>
-	<a href='https://bfelch.itch.io/transcribable-survival' style='float: right;'>
-		<img width='115px' height='46px' src='/img/social/itch_bw.png' />
-	</a>
-
-
-<div class='container'>
-	<div class='row'>
-		
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-	</div>
-</div>
 	</div>
 </div>
 
