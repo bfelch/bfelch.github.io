@@ -3,7 +3,7 @@ title: 'Camera Controls'
 project: 'Snackrificial Chamber'
 series: 'Let''s Make a Game'
 categories: updates games
-date: 2019-04-01 16:00:00
+date: 2019-04-02 16:00:00
 youtube: 4l73BOsLUaw
 ---
 I add the ability to pan the camera, allowing for more freedom in designing levels.
