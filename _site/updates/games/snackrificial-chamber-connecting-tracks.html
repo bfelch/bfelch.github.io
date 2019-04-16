@@ -133,10 +133,10 @@
 
 
 
-<div class='banner banner-projects d-none d-md-block'>
+<div class='banner banner-updates d-none d-md-block'>
 	<div class='banner-overlay'></div>
 	<div class='banner-title banner-condensed center'>
-		<h1>AQUEOUS</h1>
+		<h1>SNACKRIFICIAL CHAMBER<BR/>CONNECTING TRACKS</h1>
 	</div>
 </div>
 
@@ -145,7 +145,7 @@
 	<div class='container'>
 		<div class='row'>
 			<div class='col banner-title text-center'>
-				<h1>AQUEOUS</h1>
+				<h1>SNACKRIFICIAL CHAMBER<BR/>CONNECTING TRACKS</h1>
 			</div>
 		</div>
 	</div>
@@ -164,96 +164,60 @@
 
 <div class='container'>
 	
+		<div class='row'>
+			<div class='col'>
+				<div id='ytplayer' class='mx-auto d-block'></div>
+			</div>
+			<script>
+	// Load the IFrame Player API code asynchronously.
+	var tag = document.createElement('script');
+	tag.src = 'https://www.youtube.com/player_api';
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	
+	// Replace the 'ytplayer' element with an <iframe> and
+	// YouTube player after the API code downloads.
+	var player;
+	function onYouTubePlayerAPIReady() {
+		player = new YT.Player('ytplayer', {
+		height: '360',
+		width: '640',
+		videoId: 'ZzhePjHEUE4'
+		});
+	}
+</script>
+		</div>
+
+		<br/>
+	
 	<div class='row d-none d-md-block'>
 		<div>
 			
-				<img align=left class='img-padding'
-					src='/img/projects/aqueous.png' />
-			
-			<p>Use your fingers to control your blobby. Avoiding the obstacles will earn you coins to buy your favorite colors for your blob.
+			<p>I add automatic track connections so unused track pieces are hidden and tracks are appropriately displayed.</p>
+
 <!-- more -->
-<br /><br />
-This is my first publicly released game and is available on the Google Play store for android devices.</p>
 
+<p>I use a series of raycasts to determine if there is an adjacent track.  If there is no adjacent track, the connecting piece in that direction remains hidden.  I also added logic to determine if the adjacent track is facing toward the current track.  This prevents tracks from having a connection when neither track points to the other.</p>
 
+<p>I use Unity and Visual Studio Code.</p>
 
-
-<div class='container'>
-	<div class='row'>
-		
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-	</div>
-</div>
 		</div>
 	</div>
 	<div class='row d-md-none'>
 		<div class='col'>
 			
-				<img class='mx-auto d-block'
-					src='/img/projects/aqueous.png' />
-			
 		</div>
 	</div>
 	<br/>
 	<div class='row text-justify d-md-none'>
-		<p>Use your fingers to control your blobby. Avoiding the obstacles will earn you coins to buy your favorite colors for your blob.
+		<p>I add automatic track connections so unused track pieces are hidden and tracks are appropriately displayed.</p>
+
 <!-- more -->
-<br /><br />
-This is my first publicly released game and is available on the Google Play store for android devices.</p>
 
+<p>I use a series of raycasts to determine if there is an adjacent track.  If there is no adjacent track, the connecting piece in that direction remains hidden.  I also added logic to determine if the adjacent track is facing toward the current track.  This prevents tracks from having a connection when neither track points to the other.</p>
 
+<p>I use Unity and Visual Studio Code.</p>
 
-
-<div class='container'>
-	<div class='row'>
-		
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-	</div>
-</div>
 	</div>
 </div>
 
