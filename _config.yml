@@ -46,7 +46,7 @@ social:
     username: bfelch
     url: https://github.com/
 
-store: http://www.redbubble.com/people/EatTheFrog/portfolio
+# store: http://www.redbubble.com/people/EatTheFrog/portfolio
 
 collections:
   adventures:
